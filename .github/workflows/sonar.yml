@@ -32,7 +32,6 @@ jobs:
           args: >
             -Dsonar.projectKey=riruizmoreno_Laboratorio-Sonarqube
             -Dsonar.organization=riruizmoreno
-            -Dsonar.sources=app
             -Dsonar.sourceEncoding=UTF-8
         env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
