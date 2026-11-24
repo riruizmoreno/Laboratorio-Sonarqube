@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.12
 
       - name: Install dependencies
         run: |
@@ -36,7 +36,7 @@ jobs:
           args: >
             -Dsonar.projectKey=riruizmoreno_Laboratorio-Sonarqube
             -Dsonar.organization=riruizmoreno
-            -Dsonar.sources=src
+            -Dsonar.sources=app
             -Dsonar.sourceEncoding=UTF-8
         env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

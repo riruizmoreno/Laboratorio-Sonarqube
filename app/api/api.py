@@ -3,6 +3,7 @@ import os
 import sys
 
 def read_user():
+    debug_mode = True
     with open('data/users.json') as stream:
         users = json.load(stream)
 
