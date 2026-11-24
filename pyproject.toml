@@ -1,0 +1,30 @@
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+src = ["app", "test"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "F",      # Pyflakes
+    "W",      # pycodestyle warnings
+    "I",      # Import sorting
+    "UP",     # Python syntax modernization
+    "B",      # bugbear
+    "C4",     # comprehensions
+    "SIM",    # simplification
+    "RET",    # return statements
+    "PTH",    # pathlib usage
+    "N",      # naming conventions
+    "D",      # docstrings
+    "ANN",    # type annotations
+    "PL",     # pylint rules
+    "RUF",    # Ruff-specific rules
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
