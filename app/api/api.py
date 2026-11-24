@@ -1,5 +1,6 @@
 import json
-
+import os
+import sys
 
 def read_user():
     with open('data/users.json') as stream:

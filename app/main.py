@@ -1,11 +1,12 @@
 from fastapi import FastAPI, HTTPException
 from starlette.responses import Response
-
+import os
+import sys
 from app.db.models import UserAnswer
 from app.api import api
 
 app = FastAPI()
-
+a = 5
 
 @app.get("/")
 def root():
